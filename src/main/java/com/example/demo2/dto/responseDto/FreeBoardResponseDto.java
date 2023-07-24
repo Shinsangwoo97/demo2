@@ -1,24 +1,24 @@
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
+// import java.sql.Timestamp;
+// import java.time.LocalDateTime;
 
-import lombok.Getter;
+// import lombok.Getter;
 
-@Getter
-public class FreeBoardResponseDto {
+// @Getter
+// public class FreeBoardResponseDto {
 
-    private long id;
+// private long id;
 
-    private long photosId;
+// private long photosId;
 
-    private String kategorie;
+// private String kategorie;
 
-    private String title;
+// private String title;
 
-    private String name;
+// private String name;
 
-    private int count;
+// private int count;
 
-    private Timestamp creatTime;
+// private Timestamp creatTime;
 
-    private Timestamp putTime;
-}
+// private Timestamp putTime;
+// }

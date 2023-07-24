@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo2.dto.requestDto.FreeboardAddRequestDto;
+
 import lombok.RequiredArgsConstructor;
 
 @Controller
@@ -16,16 +18,22 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 
 public class HelloController {
-    @PostMapping("/api/user/signup")
-    public void TEST(@RequestBody @RequestParam() String iang) {
+    // @PostMapping("/api/user/signup")
+    // public void TEST(@RequestBody @RequestParam() String iang) {
+    // System.out.println(iang);
+    // // return "test";
+    // }
+
+    @PostMapping("/api/free_board/add")
+    public void getFreeboard(@RequestBody String iang) {
         System.out.println(iang);
-        // return "test";
+
     }
 
-    @GetMapping("/api/free_board")
-    public ResponseEntity getFreeboard(@RequestBody long id) {
-        return free_boardService.getFreeboard(id);
-    }
+    // @GetMapping("/api/free_board")
+    // ic ResponseEntity getFreeboard(@RequestBody long id) {
+    // return free_boardService.getFreeboard(id);
+    // }
 
     // @PostMapping("/api/users/signup")
     // public ResponseEntity signup(@RequestBody SignupRequestDto signupRequestDto)
