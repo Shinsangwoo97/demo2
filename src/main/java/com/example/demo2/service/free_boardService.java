@@ -1,13 +1,12 @@
-// package com.example.demo2.service;
+package com.example.demo2.service;
 
-// import org.springframework.http.ResponseEntity;
-// import org.springframework.stereotype.Service;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
-// import lombok.RequiredArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
-// @Service
-// @RequiredArgsConstructor
+@Service
 
-// public class free_boardService {
-// public ResponseEntity getFreeboard(FreeBoardResponsDto dto)
-// }
+public class free_boardService {
+    // public ResponseEntity getFreeboard(FreeBoardResponsDto dto)
+}
