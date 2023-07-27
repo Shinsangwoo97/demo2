@@ -23,17 +23,17 @@ public class HelloController {
     // System.out.println(iang);
     // // return "test";
     // }
+    @GetMapping("hello")
+    public String hello(Model model) {
+        model.addAttribute("data", "hello");
+        return "hello";
+    }
 
     @PostMapping("/api/free_board/add")
     public void getFreeboard(@RequestBody String iang) {
         System.out.println(iang);
 
     }
-
-    // @GetMapping("/api/free_board")
-    // ic ResponseEntity getFreeboard(@RequestBody long id) {
-    // return free_boardService.getFreeboard(id);
-    // }
 
     // @PostMapping("/api/users/signup")
     // public ResponseEntity signup(@RequestBody SignupRequestDto signupRequestDto)
